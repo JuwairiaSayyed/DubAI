@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai to the Stars 🚀</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Dubai to the Stars 🚀</h1>
+      <p>Your gateway to the ultimate space travel experience!</p>
+    </div>
+  </header>
+  <main>
+    <section id="booking">
+      <h2>Book Your Space Trip</h2>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label for="departure">Departure Date:</label>
+          <input type="date" id="departure" required>
+        </div>
+        <div class="form-group">
+          <label for="destination">Destination:</label>
+          <select id="destination" required>
+            <option value="iss">International Space Station</option>
+            <option value="moon">Lunar Hotel</option>
+            <option value="mars">Mars Colony</option>
+            <option value="titan">Titan Base (Saturn's Moon)</option>
+            <option value="europa">Europa Outpost (Jupiter's Moon)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="seatClass">Seat Class:</label>
+          <select id="seatClass" required>
+            <option value="economy">Economy Shuttle</option>
+            <option value="luxury">Luxury Cabin</option>
+            <option value="vip">VIP Zero-Gravity Experience</option>
+            <option value="first-class">First-Class Star Suite</option>
+          </select>
+        </div>
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+
+    <section id="packages">
+      <h2>Pricing & Packages</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Package</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Economy Shuttle</td>
+            <td>Affordable travel to space with basic amenities.</td>
+            <td>$50,000</td>
+          </tr>
+          <tr>
+            <td>Luxury Cabin</td>
+            <td>Comfortable and spacious cabins with premium services.</td>
+            <td>$150,000</td>
+          </tr>
+          <tr>
+            <td>VIP Zero-Gravity</td>
+            <td>Exclusive experience with zero-gravity simulations and personalized services.</td>
+            <td>$300,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="accommodation">
+      <h2>Accommodation Recommendations</h2>
+      <div class="preferences">
+        <label for="accommodationType">Preferred Accommodation Type:</label>
+        <select id="accommodationType">
+          <option value="hotel">Space Hotel</option>
+          <option value="orbital">Orbital Station</option>
+          <option value="capsule">Space Capsule</option>
+          <option value="resort">Luxury Space Resort</option>
+          <option value="dome">Lunar Dome</option>
+        </select>
+        <button onclick="showRecommendations()">Get Recommendations</button>
+      </div>
+      <div id="recommendations" class="recommendations-list"></div>
+    </section>
+
+    <section id="dashboard">
+      <h2>Your Dashboard</h2>
+      <div id="bookings" class="bookings-list"></div>
+      <div id="countdown-timer">
+        <h3>Next Launch Countdown</h3>
+        <div id="timer">Loading...</div>
+      </div>
+      <div id="travel-tips">
+        <h3>AI-Based Travel Tips</h3>
+        <p id="tip"></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Dubai to the Stars. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
